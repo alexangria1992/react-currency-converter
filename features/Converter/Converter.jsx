@@ -2,7 +2,22 @@ import React from "react";
 import { useCurrency } from "../common/hooks/useCurrency";
 
 const Converter = () => {
-  const { amount, currencyOne, currencyTwo } = useCurrency();
+  const {
+    isLoading,
+    isError,
+    amount,
+    setAmount,
+    currencyOne,
+    setCurrencyOne,
+    currencyTwo,
+    setCurrencyTwo,
+    currencyList,
+    convertedAmount,
+    ratesData,
+    symbolsData,
+    date,
+    time,
+  } = useCurrency();
   return (
     <>
       <>{amount}</>
